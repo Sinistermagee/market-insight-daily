@@ -3,68 +3,249 @@
         <html>
         <head>
             <meta charset="UTF-8">
-            <title>每日股市分析报告</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>股市分析报告 - 2026-02-06</title>
             <style>
-                body { font-family: 'Noto Sans CJK SC', sans-serif; margin: 20px; background: #f4f7f6; }
-                .container { max-width: 1000px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-                h1 { color: #333; text-align: center; }
-                table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-                th, td { padding: 12px; border: 1px solid #ddd; text-align: left; }
-                th { background-color: #f8f9fa; }
-                .signal-buy { color: green; font-weight: bold; }
-                .signal-sell { color: red; font-weight: bold; }
-                .signal-hold { color: orange; font-weight: bold; }
+                body { font-family: 'Noto Sans CJK SC', sans-serif; margin: 10px; background: #f5f7f9; }
+                .container { max-width: 1000px; margin: auto; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+                h1 { text-align: center; color: #333; font-size: 20px; }
+                .index-container { display: flex; flex-wrap: wrap; justify-content: space-around; margin-bottom: 20px; }
+                .index-card { text-align: center; padding: 10px; background: #fff; border: 1px solid #ddd; border-radius: 8px; width: 30%; min-width: 100px; margin: 5px; }
+                .index-name { font-weight: bold; color: #666; font-size: 14px; }
+                .index-price { font-size: 18px; margin: 5px 0; }
+                .table-wrapper { overflow-x: auto; }
+                table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 13px; }
+                th, td { border: 1px solid #eee; padding: 8px; text-align: left; }
+                th { background: #f8f9fa; color: #555; }
+                tr:hover { background: #fcfcfc; }
+                .footer { margin-top: 20px; text-align: center; font-size: 11px; color: #999; }
             </style>
         </head>
         <body>
             <div class="container">
-                <h1>每日股市分析报告 (2026-02-07)</h1>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>标的</th>
-                            <th>价格</th>
-                            <th>涨跌幅</th>
-                            <th>MA5/MA20</th>
-                            <th>RSI</th>
-                            <th>AI建议</th>
-                            <th>决策依据</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        
+                <h1>每日股市分析报告 (2026-02-06)</h1>
+                <div class="index-container">
+                    
+            <div class="index-card">
+                <div class="index-name">上证指数</div>
+                <div class="index-price">4065.58</div>
+                <div class="index-change" style="color: green;">-0.25%</div>
+            </div>
+            
+            <div class="index-card">
+                <div class="index-name">深证成指</div>
+                <div class="index-price">13906.73</div>
+                <div class="index-change" style="color: green;">-0.33%</div>
+            </div>
+            
+            <div class="index-card">
+                <div class="index-name">创业板指</div>
+                <div class="index-price">3236.46</div>
+                <div class="index-change" style="color: green;">-0.73%</div>
+            </div>
+            
+                </div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>标的</th>
+                                <th>价格</th>
+                                <th>涨跌幅</th>
+                                <th>MA5/20</th>
+                                <th>RSI</th>
+                                <th>AI建议</th>
+                                <th>决策依据</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
             <tr>
-                <td>601112.SS</td>
+                <td>601112.SS<br><small>C振石</small></td>
                 <td>15.8</td>
-                <td>1.94%</td>
-                <td>15.65/15.65</td>
-                <td>100.0</td>
-                <td class="signal-sell">卖出</td>
-                <td>破位或超买</td>
+                <td style="color: red;">1.94%</td>
+                <td>15.36 / 15.48</td>
+                <td>60.0</td>
+                <td style="color: gray; font-weight: bold;">观望</td>
+                <td>趋势不明</td>
             </tr>
             
             <tr>
-                <td>300014.SZ</td>
-                <td>44.8</td>
-                <td>-0.88%</td>
-                <td>45.0/45.0</td>
-                <td>0.0</td>
-                <td class="signal-sell">卖出</td>
-                <td>破位或超买</td>
+                <td>300014.SZ<br><small>亿纬锂能</small></td>
+                <td>63.53</td>
+                <td style="color: red;">3.17%</td>
+                <td>63.02 / 63.18</td>
+                <td>42.16</td>
+                <td style="color: gray; font-weight: bold;">观望</td>
+                <td>趋势不明</td>
             </tr>
             
             <tr>
-                <td>3750.HK</td>
-                <td>265.5</td>
-                <td>2.12%</td>
-                <td>262.75/262.75</td>
-                <td>100.0</td>
-                <td class="signal-sell">卖出</td>
-                <td>破位或超买</td>
+                <td>300212.SZ<br><small>易华录</small></td>
+                <td>28.45</td>
+                <td style="color: green;">-1.2%</td>
+                <td>28.77 / 28.96</td>
+                <td>44.44</td>
+                <td style="color: green; font-weight: bold;">卖出</td>
+                <td>破位、超买或MACD死叉</td>
             </tr>
             
-                    </tbody>
-                </table>
+            <tr>
+                <td>603993.SS<br><small>洛阳钼业</small></td>
+                <td>8.12</td>
+                <td style="color: red;">0.87%</td>
+                <td>8.01 / 8.06</td>
+                <td>57.14</td>
+                <td style="color: gray; font-weight: bold;">观望</td>
+                <td>趋势不明</td>
+            </tr>
+            
+            <tr>
+                <td>601899.SS<br><small>紫金矿业</small></td>
+                <td>18.45</td>
+                <td style="color: red;">1.37%</td>
+                <td>18.11 / 18.21</td>
+                <td>58.82</td>
+                <td style="color: gray; font-weight: bold;">观望</td>
+                <td>趋势不明</td>
+            </tr>
+            
+            <tr>
+                <td>688783.SS<br><small>西安奕材-U</small></td>
+                <td>42.15</td>
+                <td style="color: green;">-2.1%</td>
+                <td>42.94 / 43.21</td>
+                <td>43.48</td>
+                <td style="color: green; font-weight: bold;">卖出</td>
+                <td>破位、超买或MACD死叉</td>
+            </tr>
+            
+            <tr>
+                <td>603227.SS<br><small>雪峰科技</small></td>
+                <td>7.34</td>
+                <td style="color: red;">0.55%</td>
+                <td>7.27 / 7.31</td>
+                <td>55.1</td>
+                <td style="color: gray; font-weight: bold;">观望</td>
+                <td>趋势不明</td>
+            </tr>
+            
+            <tr>
+                <td>000582.SZ<br><small>北部湾港</small></td>
+                <td>9.21</td>
+                <td style="color: red;">0.33%</td>
+                <td>9.14 / 9.18</td>
+                <td>53.7</td>
+                <td style="color: gray; font-weight: bold;">观望</td>
+                <td>趋势不明</td>
+            </tr>
+            
+            <tr>
+                <td>603158.SS<br><small>腾龙股份</small></td>
+                <td>11.56</td>
+                <td style="color: green;">-0.77%</td>
+                <td>11.64 / 11.64</td>
+                <td>50.51</td>
+                <td style="color: green; font-weight: bold;">卖出</td>
+                <td>破位、超买或MACD死叉</td>
+            </tr>
+            
+            <tr>
+                <td>000670.SZ<br><small>盈方微</small></td>
+                <td>6.88</td>
+                <td style="color: green;">-1.43%</td>
+                <td>6.98 / 7.01</td>
+                <td>45.98</td>
+                <td style="color: green; font-weight: bold;">卖出</td>
+                <td>破位、超买或MACD死叉</td>
+            </tr>
+            
+            <tr>
+                <td>3750.HK<br><small>宁德时代</small></td>
+                <td>505.5</td>
+                <td style="color: red;">2.58%</td>
+                <td>496.66 / 497.63</td>
+                <td>60.24</td>
+                <td style="color: gray; font-weight: bold;">观望</td>
+                <td>趋势不明</td>
+            </tr>
+            
+            <tr>
+                <td>2899.HK<br><small>紫金矿业H</small></td>
+                <td>39.12</td>
+                <td style="color: green;">-1.36%</td>
+                <td>39.6 / 39.8</td>
+                <td>45.03</td>
+                <td style="color: green; font-weight: bold;">卖出</td>
+                <td>破位、超买或MACD死叉</td>
+            </tr>
+            
+            <tr>
+                <td>563320.SS<br><small>通用航空ETF</small></td>
+                <td>0.985</td>
+                <td style="color: red;">0.51%</td>
+                <td>0.98 / 0.98</td>
+                <td>56.0</td>
+                <td style="color: gray; font-weight: bold;">观望</td>
+                <td>趋势不明</td>
+            </tr>
+            
+            <tr>
+                <td>515400.SS<br><small>大数据ETF</small></td>
+                <td>1.124</td>
+                <td style="color: green;">-0.88%</td>
+                <td>1.13 / 1.14</td>
+                <td>46.34</td>
+                <td style="color: green; font-weight: bold;">卖出</td>
+                <td>破位、超买或MACD死叉</td>
+            </tr>
+            
+            <tr>
+                <td>515230.SS<br><small>软件ETF沪</small></td>
+                <td>0.876</td>
+                <td style="color: green;">-1.13%</td>
+                <td>0.89 / 0.89</td>
+                <td>46.34</td>
+                <td style="color: green; font-weight: bold;">卖出</td>
+                <td>破位、超买或MACD死叉</td>
+            </tr>
+            
+            <tr>
+                <td>159852.SZ<br><small>软件ETF深</small></td>
+                <td>0.912</td>
+                <td style="color: green;">-0.98%</td>
+                <td>0.92 / 0.92</td>
+                <td>45.88</td>
+                <td style="color: green; font-weight: bold;">卖出</td>
+                <td>破位、超买或MACD死叉</td>
+            </tr>
+            
+            <tr>
+                <td>518880.SS<br><small>黄金ETF</small></td>
+                <td>10.357</td>
+                <td style="color: green;">-1.58%</td>
+                <td>10.51 / 10.54</td>
+                <td>42.72</td>
+                <td style="color: green; font-weight: bold;">卖出</td>
+                <td>破位、超买或MACD死叉</td>
+            </tr>
+            
+            <tr>
+                <td>512890.SS<br><small>红利低波ETF华泰柏瑞</small></td>
+                <td>1.456</td>
+                <td style="color: red;">0.21%</td>
+                <td>1.45 / 1.45</td>
+                <td>57.45</td>
+                <td style="color: gray; font-weight: bold;">观望</td>
+                <td>趋势不明</td>
+            </tr>
+            
+                        </tbody>
+                    </table>
+                </div>
+                <div class="footer">
+                    数据源：真实市场行情 | 算法：内置交易纪律 AI 决策系统
+                </div>
             </div>
         </body>
         </html>
